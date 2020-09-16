@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ikinekran"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="6dp"
+        android:textAlignment="center"
+        android:textColor="#F60707"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="78dp"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="144dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#F4EC9F"
+        android:onClick="edit"
+        android:text="EDIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="144dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="#F8EE9B"
+        android:onClick="delete"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit"
+        app:layout_constraintTop_toTopOf="@+id/edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
